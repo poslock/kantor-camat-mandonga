@@ -4,103 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kantor Camat Mandonga – Kota Kendari</title>
-<style>
-:root{--navy:#0b1f4a;--blue:#2563d6;--bg:#fff;--alt:#f3f6fb;--card:#fff;--tx:#17233c;--mut:#5b6a85;--bd:#e0e7f2;--gold:#e8b32a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1426;--alt:#101b33;--card:#14223f;--tx:#e8eefb;--mut:#9fb0d0;--bd:#223457;--navy:#06112b}}
-:root[data-theme="dark"]{--bg:#0c1426;--alt:#101b33;--card:#14223f;--tx:#e8eefb;--mut:#9fb0d0;--bd:#223457;--navy:#06112b}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{margin:0;font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
-a{color:inherit;text-decoration:none}
-.w{max-width:1120px;margin:0 auto;padding:0 20px}
-.sec{padding:64px 0}.alt{background:var(--alt)}
-.ey{color:var(--blue);font-weight:700;font-size:13px;margin:0 0 6px}
-h2{font-size:clamp(24px,4vw,32px);margin:0 0 10px;line-height:1.2;color:var(--tx)}
-.hd{text-align:center;max-width:620px;margin:0 auto 36px}.hd p{color:var(--mut);margin:0}
-.top{background:var(--navy);color:#cdd8ef;font-size:13px}.top .w{display:flex;justify-content:space-between;gap:12px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
-header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--bd)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;line-height:1.1}
-.logo i{width:38px;height:38px;border-radius:9px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-style:normal;font-size:20px;border:2px solid var(--blue)}
-.logo small{display:block;font-weight:500;color:var(--mut);font-size:11px}
-nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:500}
-nav a:hover,nav a.on{color:var(--blue)}
-.btn{display:inline-block;background:var(--blue);color:#fff;padding:11px 20px;border-radius:5px;font-weight:600;font-size:14px;border:2px solid var(--blue);cursor:pointer;font-family:inherit}
-.btn.o{background:transparent;border-color:#fff}
-.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.tg{display:none;background:none;border:1px solid var(--bd);border-radius:6px;width:42px;height:38px;font-size:20px;color:var(--tx);cursor:pointer}
-.hero{background:linear-gradient(100deg,rgba(6,17,43,.96) 35%,rgba(11,31,74,.6)),repeating-linear-gradient(90deg,#1b3a7a 0 38px,#0f2860 38px 76px);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:6%;bottom:0;width:min(42%,420px);height:78%;background:linear-gradient(#26468c,#143070);clip-path:polygon(0 100%,0 22%,40% 0,40% 14%,100% 8%,100% 100%);opacity:.55}
-.hero .w{position:relative;z-index:1}
-.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:8px 0 16px;max-width:620px}
-.hero p{max-width:520px;color:#d3def5;margin:0 0 26px}
-.hero .bt{display:flex;gap:12px;flex-wrap:wrap}
-.hq{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:-34px;position:relative;z-index:2;background:var(--card);border:1px solid var(--bd);border-radius:10px;box-shadow:0 8px 24px rgba(10,25,60,.12);overflow:hidden}
-.hq a{padding:18px;border-right:1px solid var(--bd);font-weight:600;font-size:14px;display:flex;gap:10px;align-items:center}
-.hq a:last-child{border:0}.hq a:hover{background:var(--alt);color:var(--blue)}
-.ab{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-.ph{aspect-ratio:4/3;border-radius:10px;background:linear-gradient(135deg,var(--navy),var(--blue));display:grid;place-items:center;color:#fff;text-align:center;padding:20px;font-weight:600}
-.ph span{display:block;font-weight:400;font-size:13px;opacity:.8}
-.st{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
-.st b{display:block;font-size:26px;color:var(--blue)}.st span{font-size:13px;color:var(--mut)}
-.grid{display:grid;gap:18px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:22px}
-.card h3{margin:10px 0 6px;font-size:17px}.card p{margin:0;color:var(--mut);font-size:14px}
-.ic{width:44px;height:44px;border-radius:10px;background:color-mix(in srgb,var(--blue) 12%,transparent);display:grid;place-items:center;font-size:22px}
-.sv:hover{border-color:var(--blue)}
-.sv a{display:inline-block;margin-top:12px;color:var(--blue);font-weight:600;font-size:14px}
-.pn{display:grid;grid-template-columns:1.2fr 1fr;gap:22px}
-.nw .tag{font-size:12px;font-weight:700;color:var(--blue)}.nw time{font-size:12px;color:var(--mut)}
-.nw{display:flex;flex-direction:column;gap:6px}.nw h3{margin:0;font-size:18px}
-.list{list-style:none;margin:0;padding:0}.list li{padding:14px 0;border-bottom:1px solid var(--bd);display:flex;gap:14px}
-.list li:last-child{border:0}.dt{min-width:54px;text-align:center;background:var(--navy);color:#fff;border-radius:6px;padding:6px 4px;font-size:12px;line-height:1.2;height:fit-content}
-.dt b{display:block;font-size:20px}
-.org{display:flex;flex-direction:column;align-items:center;gap:14px}
-.nd{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:14px 20px;text-align:center;min-width:200px}
-.nd.top1{background:var(--navy);color:#fff;border-color:var(--navy)}.nd small{display:block;color:var(--mut)}.top1 small{color:#b8c6e6}
-.row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-.kl{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:30px}
-.kl span{border:1px solid var(--bd);background:var(--card);border-radius:20px;padding:6px 16px;font-size:14px}
-.gl{aspect-ratio:4/3;border-radius:8px;display:flex;align-items:flex-end;padding:12px;color:#fff;font-weight:600;font-size:14px}
-.gl:nth-child(1){background:linear-gradient(180deg,#0000,#000a),#2c5aa8}.gl:nth-child(2){background:linear-gradient(180deg,#0000,#000a),#1d7a6b}.gl:nth-child(3){background:linear-gradient(180deg,#0000,#000a),#8a5a1f}
-.q{max-width:720px;margin:auto;text-align:center}.q .card{padding:30px}.q p{font-size:18px;color:var(--tx)}
-.q cite{display:block;margin-top:14px;font-style:normal;font-weight:700}.q cite small{display:block;font-weight:400;color:var(--mut)}
-.dots{display:flex;gap:8px;justify-content:center;margin-top:16px}.dots button{width:10px;height:10px;border-radius:50%;border:0;background:var(--bd);cursor:pointer;padding:0}.dots button.on{background:var(--blue)}
-form{display:grid;gap:12px}
-label{font-size:13px;font-weight:600}
-input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--tx);font:inherit;margin-top:4px}
-#ok{display:none;background:color-mix(in srgb,#1a9b5c 15%,transparent);border:1px solid #1a9b5c;padding:12px;border-radius:6px;font-size:14px}
-.ct{display:grid;grid-template-columns:1fr 1.1fr;gap:30px}
-.ct ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:14px}
-.map{margin-top:16px;aspect-ratio:16/9;border-radius:8px;border:1px solid var(--bd);display:grid;place-items:center;background:repeating-linear-gradient(45deg,var(--alt) 0 14px,var(--card) 14px 28px);color:var(--mut);font-size:14px;text-align:center;padding:10px}
-footer{background:var(--navy);color:#b9c7e6;padding:48px 0 0;font-size:14px}
-.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px}
-footer h4{color:#fff;margin:0 0 12px;font-size:15px}footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-footer a:hover{color:#fff}.cp{border-top:1px solid #ffffff22;margin-top:34px;padding:16px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-.i{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.hero{background:linear-gradient(105deg,#06112b 30%,#10306f 100%);padding:80px 0 84px}.hero:after{display:none}
-.hero .w{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
-.pl{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-top:3px solid var(--gold);border-radius:8px;padding:24px}
-.pl h3{margin:0 0 14px;font-size:16px}.pl dl{margin:0 0 18px;display:grid;gap:10px;font-size:14px}.pl dl div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:8px}.pl dt{color:#b9c9ee}.pl dd{margin:0;font-weight:600}
-.hq .i{color:var(--blue);width:22px;height:22px}
-.ic{border-radius:8px;background:var(--navy);color:var(--gold)}.ic .i{width:24px;height:24px}
-.sv{border-top:3px solid var(--blue)}
-.hd h2:after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin:12px 0 0}
-@media(min-width:901px){.hd h2:after{margin-inline:auto}}
-.logo i{border:0;background:var(--navy);color:var(--gold)}
-.ct li{display:flex;gap:12px;align-items:flex-start}.ct li .i{color:var(--blue);margin-top:3px}
-.top{letter-spacing:.2px}.card{box-shadow:0 1px 2px rgba(10,25,60,.05)}
-@media(max-width:900px){.hero .w{grid-template-columns:1fr;gap:32px}.hero{padding:64px 0 70px}}
-@media(max-width:900px){
-.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr 1fr}.ab,.pn,.ct{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr}
-.hq{grid-template-columns:1fr 1fr}.hq a:nth-child(2){border-right:0}.hq a:nth-child(-n+2){border-bottom:1px solid var(--bd)}
-.tg{display:block}.hd{text-align:left;margin-left:0}
-nav{position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--bd);display:none;padding:12px 20px 18px}
-nav.open{display:block}nav ul{flex-direction:column;gap:14px}.nav .btn.hide{display:none}}
-@media(max-width:560px){.g4,.g3,.fg{grid-template-columns:1fr}.sec{padding:48px 0}.hero{padding:64px 0 70px}.top .w div:last-child{display:none}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- SVG Symbols (sama seperti aslinya) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="idcard" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2.5"/><path d="M5.5 17c.5-2 2-3 3.5-3s3 1 3.5 3M15 9h3M15 13h3"/></symbol>
 <symbol id="doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
@@ -118,109 +26,72 @@ nav.open{display:block}nav ul{flex-direction:column;gap:14px}.nav .btn.hide{disp
 <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
 <symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
 </defs></svg>
+
+<!-- Top Bar -->
 <div class="top"><div class="w"><div>Jam layanan: Senin–Jumat, 08.00–16.00 WITA</div><div>Kota Kendari, Sulawesi Tenggara</div></div></div>
+
+<!-- Header -->
 <header><div class="w nav">
-<a class="logo" href="#beranda"><i><svg class="i" style="width:22px;height:22px"><use href="#building"/></svg></i><span>Kecamatan Mandonga<small>Pemerintah Kota Kendari</small></span></a>
+<a class="logo" href="index.html"><i><svg class="i" style="width:22px;height:22px"><use href="#building"/></svg></i><span>Kecamatan Mandonga<small>Pemerintah Kota Kendari</small></span></a>
 <button class="tg" id="tg" aria-label="Buka menu" aria-expanded="false"><svg class="i"><use href="#menu"/></svg></button>
 <nav id="nv"><ul>
-<li><a href="#beranda" class="on">Beranda</a></li><li><a href="#profil">Profil</a></li><li><a href="#layanan">Layanan</a></li><li><a href="#berita">Berita</a></li><li><a href="#struktur">Struktur</a></li><li><a href="#galeri">Galeri</a></li><li><a href="#kontak">Kontak</a></li></ul></nav>
-<a class="btn hide" href="#pengaduan">Buat pengaduan</a>
+<li><a href="index.html" class="on">Beranda</a></li>
+<li><a href="profil.html">Profil</a></li>
+<li><a href="layanan.html">Layanan</a></li>
+<li><a href="berita.html">Berita</a></li>
+<li><a href="struktur.html">Struktur</a></li>
+<li><a href="galeri.html">Galeri</a></li>
+<li><a href="kontak.html">Kontak</a></li>
+</ul></nav>
+<a class="btn hide" href="kontak.html#pengaduan">Buat pengaduan</a>
 </div></header>
 
+<!-- HERO (hanya di Beranda) -->
 <section class="hero" id="beranda"><div class="w"><div>
 <p style="margin:0;font-size:13px;color:#9fc0ff">Selamat datang di situs resmi Kantor Camat Mandonga</p>
 <h1>Melayani Warga dengan Cepat, Jujur, dan Transparan</h1>
 <p>Kami membantu warga Mandonga mengurus administrasi kependudukan, perizinan, dan pelayanan publik lainnya, sekaligus mendengar aspirasi dan pengaduan Anda.</p>
-<div class="bt"><a class="btn" href="#layanan">Lihat layanan</a><a class="btn o" href="#kontak">Hubungi kami</a></div>
+<div class="bt"><a class="btn" href="layanan.html">Lihat layanan</a><a class="btn o" href="kontak.html">Hubungi kami</a></div>
 </div>
-<aside class="pl"><h3>Jam pelayanan</h3><dl><div><dt>Senin–Kamis</dt><dd>08.00–16.00 WITA</dd></div><div><dt>Jumat</dt><dd>08.00–16.30 WITA</dd></div><div><dt>Sabtu–Minggu</dt><dd>Tutup</dd></div></dl><a class="btn" href="#kontak" style="display:block;text-align:center">Lihat lokasi kantor</a></aside></div></section>
+<aside class="pl"><h3>Jam pelayanan</h3><dl><div><dt>Senin–Kamis</dt><dd>08.00–16.00 WITA</dd></div><div><dt>Jumat</dt><dd>08.00–16.30 WITA</dd></div><div><dt>Sabtu–Minggu</dt><dd>Tutup</dd></div></dl><a class="btn" href="kontak.html" style="display:block;text-align:center">Lihat lokasi kantor</a></aside></div></section>
 
+<!-- Quick Links -->
 <div class="w"><div class="hq">
-<a href="#layanan"><svg class="i"><use href="#doc"/></svg>Syarat layanan</a><a href="#pengaduan"><svg class="i"><use href="#mega"/></svg>Pengaduan warga</a><a href="#berita"><svg class="i"><use href="#cal"/></svg>Agenda kegiatan</a><a href="#kontak"><svg class="i"><use href="#pin"/></svg>Lokasi kantor</a></div></div>
+<a href="layanan.html"><svg class="i"><use href="#doc"/></svg>Syarat layanan</a>
+<a href="kontak.html#pengaduan"><svg class="i"><use href="#mega"/></svg>Pengaduan warga</a>
+<a href="berita.html"><svg class="i"><use href="#cal"/></svg>Agenda kegiatan</a>
+<a href="kontak.html"><svg class="i"><use href="#pin"/></svg>Lokasi kantor</a>
+</div></div>
 
+<!-- Ringkasan Profil -->
 <section class="sec" id="profil"><div class="w ab">
 <div><p class="ey">Profil kecamatan</p><h2>Pelayan Publik di Tingkat Kecamatan</h2>
 <p style="color:var(--mut)">Kantor Camat Mandonga adalah perangkat daerah Kota Kendari yang mengoordinasikan pemerintahan, pembangunan, dan pelayanan masyarakat di wilayah Kecamatan Mandonga bersama para lurah.</p>
-<p style="color:var(--mut)"><b style="color:var(--tx)">Visi:</b> Terwujudnya pelayanan kecamatan yang prima, transparan, dan berorientasi pada kebutuhan warga.</p>
-<div class="st"><div><b>7</b><span>Kelurahan</span></div><div><b>8</b><span>Jenis layanan</span></div><div><b>1×24 jam</b><span>Kanal pengaduan online</span></div></div></div>
-<div class="ph"><div><img src="image.png" alt="Foto Camat dan jajaran"></div></div>
+<div class="st"><div><b>7</b><span>Kelurahan</span></div><div><b>8</b><span>Jenis layanan</span></div><div><b>1×24 jam</b><span>Kanal pengaduan online</span></div></div>
+<a class="btn" href="profil.html" style="margin-top:20px">Selengkapnya</a></div>
+<div class="ph"><img src="image.png" alt="Foto Camat dan jajaran"></div>
 </div></section>
 
-<section class="sec alt" id="layanan"><div class="w">
-<div class="hd"><p class="ey">Layanan publik</p><h2>Layanan yang Tersedia di Kecamatan</h2><p>Siapkan berkas sesuai persyaratan, lalu datang ke kantor atau hubungi petugas kami.</p></div>
-<div class="grid g4" id="sv"></div>
-</div></section>
-
-<section class="sec" id="berita"><div class="w">
+<!-- Berita Singkat -->
+<section class="sec alt" id="berita"><div class="w">
 <div class="hd"><p class="ey">Informasi terkini</p><h2>Berita dan Pengumuman</h2></div>
 <div class="pn">
-<div class="card nw"><div class="ph" style="aspect-ratio:16/8"><img src="image copy.png" alt="Foto kegiatan"></div><span class="tag">Kegiatan</span><h3>Dirgahayu Kota Kendari Ke -190...🥳😎</h3><p style="color:var(--mut);margin:0">Selamat ulang tahun Kota Kendari!</p><time>15 November 2026</time></div>
+<div class="card nw"><div class="ph" style="aspect-ratio:16/8"><img src="image copy.png" alt="Foto kegiatan"></div><span class="tag">Kegiatan</span><h3>Dirgahayu Kota Kendari Ke-190</h3><p style="color:var(--mut);margin:0">Selamat ulang tahun Kota Kendari!</p><time>15 November 2026</time></div>
 <div class="card"><h3 style="margin-top:0">Agenda dan pengumuman</h3><ul class="list">
 <li><div class="dt"><b>18</b>NOV</div><div><b>Rapat koordinasi lurah</b><br><small style="color:var(--mut)">Aula Kantor Camat, 09.00 WITA</small></div></li>
 <li><div class="dt"><b>21</b>NOV</div><div><b>Kerja bakti lingkungan</b><br><small style="color:var(--mut)">Seluruh kelurahan</small></div></li>
-<li><div class="dt"><b>25</b>NOV</div><div><b>Pelayanan jemput bola dokumen kependudukan</b><br><small style="color:var(--mut)">Jadwal menyusul</small></div></li></ul></div>
-</div></div></section>
-
-<section class="sec alt" id="struktur"><div class="w">
-<div class="hd" style="text-align:center;margin-left:auto"><p class="ey">Struktur organisasi</p><h2>Pimpinan dan Perangkat Kecamatan</h2></div>
-<div class="org"><div class="nd top1"><b>Camat Mandonga</b><small>[Nama Camat]</small></div>
-<div class="nd"><b>Sekretaris Camat</b><small>[Nama]</small></div>
-<div class="row"><div class="nd"><b>Kasi Pemerintahan</b><small>[Nama]</small></div><div class="nd"><b>Kasi Pelayanan Umum</b><small>[Nama]</small></div><div class="nd"><b>Kasi Ketentraman dan Ketertiban</b><small>[Nama]</small></div></div></div>
-<div class="kl" id="kl"></div>
+<li><div class="dt"><b>25</b>NOV</div><div><b>Pelayanan jemput bola</b><br><small style="color:var(--mut)">Jadwal menyusul</small></div></li></ul></div>
+</div>
+<div style="text-align:center;margin-top:24px"><a class="btn" href="berita.html">Lihat semua berita</a></div>
 </div></section>
 
-<section class="sec" id="galeri"><div class="w">
-<div class="hd"><p class="ey">Galeri</p><h2>Dokumentasi Kegiatan</h2></div>
-<div class="grid g3"><div class="gl"><img src="#" alt="Foto kegiatan">Pelayanan tatap muka</div><div class="gl">Rapat dengan masyarakat</div><div class="gl">Kegiatan lingkungan</div></div>
-</div></section>
-
-<section class="sec alt"><div class="w"><div class="hd" style="text-align:center;margin-left:auto"><p class="ey">Suara warga</p><h2>Apa Kata Warga</h2></div>
+<!-- Testimoni -->
+<section class="sec"><div class="w"><div class="hd" style="text-align:center;margin-left:auto"><p class="ey">Suara warga</p><h2>Apa Kata Warga</h2></div>
 <div class="q"><div class="card"><p id="qt"></p><cite id="qc"></cite></div><div class="dots" id="dots"></div></div></div></section>
 
-<section class="sec" id="pengaduan"><div class="w ct">
-<div><p class="ey">Pengaduan dan aspirasi</p><h2>Sampaikan Masukan Anda</h2><p style="color:var(--mut)">Ceritakan keluhan atau saran Anda. Pesan akan disiapkan untuk dikirim ke petugas kecamatan melalui WhatsApp.</p>
-<ul style="margin-top:18px"><li><svg class="i"><use href="#check"/></svg>Jelaskan masalah dan lokasi sejelas mungkin</li><li><svg class="i"><use href="#check"/></svg>Sertakan nomor yang bisa dihubungi</li><li><svg class="i"><use href="#check"/></svg>Hindari memuat data pribadi yang tidak perlu</li></ul></div>
-<form id="f" novalidate class="card">
-<label>Nama lengkap<input id="n" required autocomplete="name"></label>
-<label>Kelurahan<select id="k"></select></label>
-<label>Kategori<select id="c"><option>Pengaduan layanan</option><option>Infrastruktur dan lingkungan</option><option>Keamanan dan ketertiban</option><option>Saran dan aspirasi</option></select></label>
-<label>Isi pesan<textarea id="m" rows="4" required></textarea></label>
-<button class="btn" type="submit">Kirim pengaduan</button><div id="ok" role="status"></div></form>
-</div></section>
-
-<section class="sec alt" id="kontak"><div class="w ct">
-<div><p class="ey">Kontak</p><h2>Kunjungi atau Hubungi Kami</h2>
-<ul><li><svg class="i"><use href="#pin"/></svg>Wawombalata, Kecamatan Mandonga, Kota Kendari</li><li><svg class="i"><use href="#phone"/></svg>[nomor telepon kantor]</li><li><svg class="i"><use href="#mail"/></svg>[email resmi kecamatan]</li><li><svg class="i"><use href="#clock"/></svg>Senin–Kamis 08.00–16.00, Jumat 08.00–16.30 WITA</li></ul></div>
-<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.3560754803098!2d122.50689077505746!3d-3.9467900960269637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98f328ca3982e5%3A0x303e7d61f29a4cb6!2sKantor%20Camat%20Mandonga!5e0!3m2!1sid!2sid!4v1794724734896!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-</div></section>
-
+<!-- Footer -->
 <footer><div class="w"><div class="fg">
 <div><h4>Kantor Camat Mandonga</h4><p>Pelayanan publik yang cepat, jujur, dan transparan untuk seluruh warga Mandonga.</p></div>
-<div><h4>Tautan cepat</h4><ul><li><a href="#profil">Profil</a></li><li><a href="#layanan">Layanan</a></li><li><a href="#berita">Berita</a></li><li><a href="#kontak">Kontak</a></li></ul></div>
+<div><h4>Tautan cepat</h4><ul><li><a href="profil.html">Profil</a></li><li><a href="layanan.html">Layanan</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li></ul></div>
 <div><h4>Situs terkait</h4><ul><li><a href="https://kendarikota.go.id" rel="noopener">Pemerintah Kota Kendari</a></li><li><a href="https://www.lapor.go.id" rel="noopener">LAPOR!</a></li><li><a href="https://ppid.go.id" rel="noopener">PPID</a></li></ul></div>
-<div><h4>Media sosial</h4><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li></ul></div>
-</div><div class="cp"><span>© 2026 Kantor Camat Mandonga, Pemerintah Kota Kendari.</span><button class="btn" style="padding:5px 12px" id="th">Ganti tema</button></div></div></footer>
-
-<script>
-
-
-var S=[["idcard","Administrasi kependudukan","Pengantar KTP, KK, dan akta untuk diteruskan ke Disdukcapil."],["doc","Surat keterangan","Domisili, usaha mikro, tidak mampu, dan keterangan lainnya."],["building","Rekomendasi dan izin","Rekomendasi kegiatan dan izin keramaian tingkat kecamatan."],["land","Pertanahan","Pengantar dan legalisasi dokumen terkait tanah."],["users","Sosial dan kesra","Pendataan bantuan sosial dan pembinaan kemasyarakatan."],["shield","Trantibum","Koordinasi ketentraman, ketertiban, dan kesiapsiagaan bencana."],["mega","Pengaduan","Terima keluhan dan aspirasi warga secara langsung maupun daring."],["build","Pembangunan","Musrenbang dan pemantauan pembangunan di wilayah."]];
-var K=["[Kelurahan 1]","[Kelurahan 2]","[Kelurahan 3]","[Kelurahan 4]","[Kelurahan 5]","[Kelurahan 6]","[Kelurahan 7]"];
-var Q=[["Pengurusan surat keterangan berjalan cepat dan petugasnya ramah.","Contoh testimoni warga","Ganti dengan testimoni asli"],["Pengaduan saya ditanggapi dan ditindaklanjuti dengan baik.","Contoh testimoni warga","Ganti dengan testimoni asli"],["Informasi persyaratan jelas, tidak perlu bolak-balik ke kantor.","Contoh testimoni warga","Ganti dengan testimoni asli"]];
-var e=function(i){return document.getElementById(i)};
-e("sv").innerHTML=S.map(function(s){return '<div class="card sv"><div class="ic"><svg class="i"><use href="#'+s[0]+'"/></svg></div><h3>'+s[1]+'</h3><p>'+s[2]+'</p><a href="#kontak">Tanya petugas</a></div>'}).join("");
-e("kl").innerHTML=K.map(function(k){return "<span>"+k+"</span>"}).join("");
-e("k").innerHTML=K.map(function(k){return "<option>"+k+"</option>"}).join("");
-function q(i){e("qt").textContent="“"+Q[i][0]+"”";e("qc").innerHTML=Q[i][1]+"<small>"+Q[i][2]+"</small>";[].forEach.call(e("dots").children,function(d,j){d.className=j==i?"on":""})}
-Q.forEach(function(_,i){var b=document.createElement("button");b.setAttribute("aria-label","Testimoni "+(i+1));b.onclick=function(){q(i)};e("dots").appendChild(b)});q(0);
-e("tg").onclick=function(){var o=e("nv").classList.toggle("open");this.setAttribute("aria-expanded",o)};
-[].forEach.call(document.querySelectorAll("nav a"),function(a){a.onclick=function(){e("nv").classList.remove("open")}});
-e("f").onsubmit=function(ev){ev.preventDefault();var o=e("ok");o.style.display="block";
-if(!e("n").value.trim()||!e("m").value.trim()){o.textContent="Isi nama dan pesan terlebih dahulu.";return}
-var t="Pengaduan Kecamatan Mandonga\nNama: "+e("n").value+"\nKelurahan: "+e("k").value+"\nKategori: "+e("c").value+"\nPesan: "+e("m").value;
-o.textContent="Pesan siap. Ganti nomor WhatsApp di kode dengan nomor resmi kecamatan.";
-window.open("https://wa.me/6200000000000?text="+encodeURIComponent(t),"_blank","noopener")};
-e("th").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark")};
-</script>
-</body>
-</html>
+<div><h4>Media sosial</h4><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li></ul></div

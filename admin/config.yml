@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: poslock/kantor-camat-mandonga
+  branch: main
+  base_url: https://kantor-camat-mandonga.adityasubata3-ca5.workers.dev # Pastikan URL ini sesuai dengan Worker kamu
+
+# Folder tempat gambar yang di-upload lewat CMS akan disimpan
+media_folder: "images/uploads" 
+public_folder: "/images/uploads"
+
+# Daftar konten yang bisa diedit
+collections:
+  - name: "berita"
+    label: "Berita & Pengumuman"
+    folder: "content/berita" # Konten akan disimpan sebagai file di folder ini
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Judul Berita", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Kategori", name: "category", widget: "select", options: ["Kegiatan", "Pengumuman", "Sosial"] }
+      - { label: "Gambar Utama", name: "image", widget: "image", required: false }
+      - { label: "Ringkasan", name: "summary", widget: "text" }
+      - { label: "Isi Berita", name: "body", widget: "markdown" }
+
+  - name: "agenda"
+    label: "Agenda Kegiatan"
+    folder: "content/agenda"
+    create: true
+    fields:
+      - { label: "Nama Kegiatan", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - { label: "Lokasi", name: "location", widget: "string" }
+      - { label: "Keterangan", name: "description", widget: "text" }

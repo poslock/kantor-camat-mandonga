@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontak & Pengaduan – Kantor Camat Mandonga</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SVG SYMBOLS: salin blok <svg>...</svg> dari layanan.html/index.html -->
+
+<div class="top"><div class="w"><div>Jam layanan: Senin–Jumat, 08.00–16.00 WITA</div><div>Kota Kendari, Sulawesi Tenggara</div></div></div>
+
+<header><div class="w nav">
+<a class="logo" href="index.html"><i><svg class="i" style="width:22px;height:22px"><use href="#building"/></svg></i><span>Kecamatan Mandonga<small>Pemerintah Kota Kendari</small></span></a>
+<button class="tg" id="tg" aria-label="Buka menu" aria-expanded="false"><svg class="i"><use href="#menu"/></svg></button>
+<nav id="nv"><ul>
+<li><a href="index.html">Beranda</a></li>
+<li><a href="profil.html">Profil</a></li>
+<li><a href="layanan.html">Layanan</a></li>
+<li><a href="berita.html">Berita</a></li>
+<li><a href="struktur.html">Struktur</a></li>
+<li><a href="galeri.html">Galeri</a></li>
+<li><a href="kontak.html" class="on">Kontak</a></li>
+</ul></nav>
+<a class="btn hide" href="#pengaduan">Buat pengaduan</a>
+</div></header>
+
+<!-- Pengaduan -->
+<section class="sec" id="pengaduan" style="padding-top:48px"><div class="w ct">
+<div><p class="ey">Pengaduan dan aspirasi</p><h2>Sampaikan Masukan Anda</h2><p style="color:var(--mut)">Ceritakan keluhan atau saran Anda. Pesan akan disiapkan untuk dikirim ke petugas kecamatan melalui WhatsApp.</p>
+<ul style="margin-top:18px"><li><svg class="i"><use href="#check"/></svg>Jelaskan masalah dan lokasi sejelas mungkin</li><li><svg class="i"><use href="#check"/></svg>Sertakan nomor yang bisa dihubungi</li><li><svg class="i"><use href="#check"/></svg>Hindari memuat data pribadi yang tidak perlu</li></ul></div>
+<form id="f" novalidate class="card">
+<label>Nama lengkap<input id="n" required autocomplete="name"></label>
+<label>Kelurahan<select id="k"></select></label>
+<label>Kategori<select id="c"><option>Pengaduan layanan</option><option>Infrastruktur dan lingkungan</option><option>Keamanan dan ketertiban</option><option>Saran dan aspirasi</option></select></label>
+<label>Isi pesan<textarea id="m" rows="4" required></textarea></label>
+<button class="btn" type="submit">Kirim pengaduan</button><div id="ok" role="status"></div>
+</form>
+</div></section>
+
+<!-- Kontak & Peta -->
+<section class="sec alt" id="kontak"><div class="w ct">
+<div><p class="ey">Kontak</p><h2>Kunjungi atau Hubungi Kami</h2>
+<ul><li><svg class="i"><use href="#pin"/></svg>Wawombalata, Kecamatan Mandonga, Kota Kendari</li><li><svg class="i"><use href="#phone"/></svg>[nomor telepon kantor]</li><li><svg class="i"><use href="#mail"/></svg>[email resmi kecamatan]</li><li><svg class="i"><use href="#clock"/></svg>Senin–Kamis 08.00–16.00, Jumat 08.00–16.30 WITA</li></ul></div>
+<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.3560754803098!2d122.50689077505746!3d-3.9467900960269637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98f328ca3982e5%3A0x303e7d61f29a4cb6!2sKantor%20Camat%20Mandonga!5e0!3m2!1sid!2sid!4v1794724734896!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+</div></section>
+
+<footer><div class="w"><div class="fg">
+<div><h4>Kantor Camat Mandonga</h4><p>Pelayanan publik yang cepat, jujur, dan transparan untuk seluruh warga Mandonga.</p></div>
+<div><h4>Tautan cepat</h4><ul><li><a href="profil.html">Profil</a></li><li><a href="layanan.html">Layanan</a></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li></ul></div>
+<div><h4>Situs terkait</h4><ul><li><a href="https://kendarikota.go.id" rel="noopener">Pemerintah Kota Kendari</a></li><li><a href="https://www.lapor.go.id" rel="noopener">LAPOR!</a></li><li><a href="https://ppid.go.id" rel="noopener">PPID</a></li></ul></div>
+<div><h4>Media sosial</h4><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li></ul></div>
+</div><div class="cp"><span>© 2026 Kantor Camat Mandonga, Pemerintah Kota Kendari.</span><button class="btn" style="padding:5px 12px" id="th">Ganti tema</button></div></div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

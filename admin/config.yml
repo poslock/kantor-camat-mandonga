@@ -23,12 +23,18 @@ collections:
       - { label: "Ringkasan", name: "summary", widget: "text" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
 
-  - name: "agenda"
-    label: "Agenda Kegiatan"
-    folder: "content/agenda"
-    create: true
-    fields:
-      - { label: "Nama Kegiatan", name: "title", widget: "string" }
-      - { label: "Tanggal", name: "date", widget: "datetime" }
-      - { label: "Lokasi", name: "location", widget: "string" }
-      - { label: "Keterangan", name: "description", widget: "text" }
+    - name: "berita"
+      label: "Berita & Pengumuman"
+      folder: "content/berita"
+      create: true
+      # Tambahkan 3 baris ini agar otomatis membuat index.json
+      meta: { path: "index.json" }
+      extension: "md"
+      format: "frontmatter"
+      fields:
+        - { label: "Judul Berita", name: "title", widget: "string" }
+        - { label: "Tanggal", name: "date", widget: "datetime" }
+        - { label: "Kategori", name: "category", widget: "select", options: ["Kegiatan", "Pengumuman", "Sosial"] }
+        - { label: "Gambar Utama", name: "image", widget: "image", required: false }
+        - { label: "Ringkasan", name: "summary", widget: "text" }
+        - { label: "Isi Berita", name: "body", widget: "markdown" }

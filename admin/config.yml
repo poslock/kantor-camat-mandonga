@@ -2,7 +2,7 @@ backend:
   name: github
   repo: poslock/kantor-camat-mandonga
   branch: main
-  base_url: https://sveltia-cms-auth.adityasubata3-ca5.workers.dev # Pastikan URL ini sesuai dengan Worker kamu
+  base_url: https://sveltia-cms-auth.adityasubata3-ca5.workers.dev # <--- Ubah ke URL Worker baru ini
 
 # Folder tempat gambar yang di-upload lewat CMS akan disimpan
 media_folder: "images/uploads" 

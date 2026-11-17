@@ -2,39 +2,33 @@ backend:
   name: github
   repo: poslock/kantor-camat-mandonga
   branch: main
-  base_url: https://sveltia-cms-auth.adityasubata3-ca5.workers.dev # <--- Ubah ke URL Worker baru ini
+  base_url: https://sveltia-cms-auth.adityasubata3-ca5.workers.dev
 
-# Folder tempat gambar yang di-upload lewat CMS akan disimpan
-media_folder: "images/uploads" 
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-# Daftar konten yang bisa diedit
 collections:
   - name: "berita"
     label: "Berita & Pengumuman"
-    folder: "content/berita" # Konten akan disimpan sebagai file di folder ini
+    folder: "content/berita"
     create: true
+    # --- PERBAIKAN DI SINI ---
+    meta:
+      path: "index.json"
+    # -------------------------
+    extension: "md"
+    format: "frontmatter"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Judul Berita", name: "title", widget: "string" }
       - { label: "Tanggal", name: "date", widget: "datetime" }
-      - { label: "Kategori", name: "category", widget: "select", options: ["Kegiatan", "Pengumuman", "Sosial"] }
-      - { label: "Gambar Utama", name: "image", widget: "image", required: false }
+      - label: "Kategori"
+        name: "category"
+        widget: "select"
+        options: ["Kegiatan", "Pengumuman", "Sosial"]
+      - label: "Gambar Utama"
+        name: "image"
+        widget: "image"
+        required: false
       - { label: "Ringkasan", name: "summary", widget: "text" }
       - { label: "Isi Berita", name: "body", widget: "markdown" }
-
-    - name: "berita"
-      label: "Berita & Pengumuman"
-      folder: "content/berita"
-      create: true
-      # Tambahkan 3 baris ini agar otomatis membuat index.json
-      meta: { path: "index.json" }
-      extension: "md"
-      format: "frontmatter"
-      fields:
-        - { label: "Judul Berita", name: "title", widget: "string" }
-        - { label: "Tanggal", name: "date", widget: "datetime" }
-        - { label: "Kategori", name: "category", widget: "select", options: ["Kegiatan", "Pengumuman", "Sosial"] }
-        - { label: "Gambar Utama", name: "image", widget: "image", required: false }
-        - { label: "Ringkasan", name: "summary", widget: "text" }
-        - { label: "Isi Berita", name: "body", widget: "markdown" }

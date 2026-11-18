@@ -1,3 +1,4 @@
+
 backend:
   name: github
   repo: poslock/kantor-camat-mandonga
@@ -12,10 +13,6 @@ collections:
     label: "Berita & Pengumuman"
     folder: "content/berita"
     create: true
-    # --- PERBAIKAN DI SINI ---
-    meta:
-      path: "index.json"
-    # -------------------------
     extension: "md"
     format: "frontmatter"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -25,7 +22,10 @@ collections:
       - label: "Kategori"
         name: "category"
         widget: "select"
-        options: ["Kegiatan", "Pengumuman", "Sosial"]
+        options:
+          - "Kegiatan"
+          - "Pengumuman"
+          - "Sosial"
       - label: "Gambar Utama"
         name: "image"
         widget: "image"

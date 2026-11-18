@@ -48,10 +48,11 @@
 </div>
 
 <!-- Daftar berita tambahan -->
-<div style="margin-top:36px" class="grid g3">
-<div class="card"><span class="tag" style="color:var(--blue);font-size:12px;font-weight:700">Pengumuman</span><h3>Pelayanan administrasi kembali normal</h3><p>Pelayanan tatap muka dibuka kembali Senin depan dengan protokol kesehatan.</p></div>
-<div class="card"><span class="tag" style="color:var(--blue);font-size:12px;font-weight:700">Kegiatan</span><h3>Musrenbang tingkat kecamatan</h3><p>Usulan warga dari tujuh kelurahan dibahas bersama para lurah.</p></div>
-<div class="card"><span class="tag" style="color:var(--blue);font-size:12px;font-weight:700">Sosial</span><h3>Penyaluran bantuan sosial</h3><p>Pendataan penerima bantuan tahap akhir dilakukan di tiap kelurahan.</p></div>
+<!-- Berita dari Sveltia CMS -->
+<div id="daftar-berita"
+     class="grid g3"
+     style="margin-top:36px">
+    <p>Memuat berita...</p>
 </div>
 </div></section>
 
@@ -173,7 +174,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             card.innerHTML = `
                 ${berita.image
-                    ? `<img src="${escapeHTML(berita.image)}"
+                    ? `<img src="${encodeURI(berita.image.startsWith('/') ? berita.image : '/' + berita.image)}"
                         alt="${escapeHTML(berita.title)}"
                         style="width:100%;height:200px;
                         object-fit:cover;border-radius:8px;

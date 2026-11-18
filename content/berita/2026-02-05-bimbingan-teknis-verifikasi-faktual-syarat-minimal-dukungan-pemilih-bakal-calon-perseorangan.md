@@ -2,7 +2,7 @@
 title: Bimbingan Teknis Verifikasi Faktual Syarat Minimal Dukungan Pemilih Bakal Calon Perseorangan
 date: 2026-02-06T07:28:00
 category: Kegiatan
-image: /images/uploads/Cuplikan layar 2026-11-18 072804.png
+image: /images/uploads/kegiatan1.png
 summary: Bimbingan Teknis Verifikasi Faktual Syarat Minimal Dukungan Pemilih Bakal Calon Perseorangan
 ---
 
